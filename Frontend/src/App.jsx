@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "./apiClient.js";
 import SiteFooter from "./components/SiteFooter.jsx";
 import SiteHeader from "./components/SiteHeader.jsx";
-import AppRoutes from "./routes/AppRoutes.jsx";
+import AppRoutes from "./Routes/AppRoutes.jsx";
 
 export default function App() {
   const [user, setUser] = useState(null);
