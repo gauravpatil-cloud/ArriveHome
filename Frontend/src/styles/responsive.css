@@ -1,0 +1,67 @@
+@media (max-width: 1060px) {
+  .stay-header { padding-inline: 24px; gap: 15px; }
+  .tax-switch span { display: none; }
+  .listing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .stay-header { height: auto; min-height: 72px; flex-wrap: wrap; justify-content: space-between; padding: 12px 18px; gap: 9px 14px; }
+  .brand { font-size: 18px; }
+  .brand-mark { width: 31px; height: 31px; }
+  .header-search { order: 3; width: 100%; max-width: none; }
+  .header-actions { gap: 11px; font-size: 12px; }
+  .tax-switch { display: none; }
+  .user-menu { gap: 10px; }
+  .signup-link { padding: 7px 11px; }
+  .page-width { width: min(100% - 32px, 1190px); }
+  .listings-page { padding-top: 17px; }
+  .welcome-panel { min-height: 215px; padding: 27px 24px; }
+  .welcome-panel h1 { max-width: 430px; font-size: 33px; }
+  .welcome-panel p:not(.eyebrow) { max-width: 310px; font-size: 13px; }
+  .welcome-decoration { right: -3%; bottom: -85px; font-size: 280px; }
+  .section-heading { margin: 32px 0 17px; }
+  .section-heading h2 { font-size: 22px; }
+  .listing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px 14px; }
+  .card-photo { aspect-ratio: 1.02; border-radius: 12px; }
+  .listing-card > .gallery-arrow { width: 29px; height: 29px; opacity: 1; font-size: 21px; }
+  .listing-card-copy { padding-top: 10px; }
+  .detail-title-row { align-items: start; }
+  .detail-title-row h1 { font-size: 28px; }
+  .host-controls { flex-direction: column; }
+  .host-controls .button { min-height: 34px; padding: 7px 10px; font-size: 11px; }
+  .photo-gallery { grid-template-columns: minmax(0, 1fr) 92px; height: clamp(260px, 62vw, 400px); gap: 8px; border-radius: 13px; }
+  .gallery-thumbnails { gap: 6px; padding: 6px 6px 6px 0; }
+  .detail-columns { grid-template-columns: 1fr; gap: 25px; margin-top: 28px; }
+  .location-section { margin-top: 28px; }
+  .location-heading { align-items: start; flex-direction: column; gap: 10px; }
+  .location-map { height: 290px; }
+  .location-picker-map { height: 210px; }
+  .booking-card { position: static; grid-row: 1; }
+  .review-list { grid-template-columns: 1fr; gap: 16px; }
+  .auth-page { padding-top: 30px; }
+  .footer-inner { flex-direction: column; gap: 23px; }
+  .footer-links { flex-wrap: wrap; gap: 14px 21px; }
+}
+@media (max-width: 430px) {
+  .header-actions { font-size: 11px; }
+  .user-menu { gap: 8px; }
+  .user-menu > a, .text-button, .host-link { font-size: 11px; }
+  .listing-grid { grid-template-columns: 1fr; }
+  .card-photo { aspect-ratio: 1.22; }
+  .listing-card h3, .card-location-row p { font-size: 13px; }
+  .detail-title-row { flex-direction: column; }
+  .host-controls { flex-direction: row; }
+  .photo-gallery { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 1fr) 67px; height: 360px; }
+  .photo-gallery.single-photo { grid-template-rows: 1fr; }
+  .gallery-thumbnails { display: flex; overflow-y: hidden; overflow-x: auto; padding: 0 7px 7px; }
+  .thumbnail { flex: 0 0 78px; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-card, .auth-card { padding: 23px; }
+  .trip-card { align-items: start; gap: 12px; padding: 11px; }
+  .trip-photo { width: 92px; height: 100px; flex-basis: 92px; }
+  .trip-card h2 { font-size: 15px; }
+  .footer-bottom { gap: 8px; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

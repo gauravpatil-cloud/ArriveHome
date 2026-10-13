@@ -1,0 +1,37 @@
+.stay-header { height: 82px; padding: 0 clamp(20px, 5vw, 76px); display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.96); position: sticky; top: 0; z-index: 10; }
+.brand { display: inline-flex; align-items: center; gap: 9px; color: var(--green); font: 800 20px Manrope, sans-serif; letter-spacing: -.06em; white-space: nowrap; }
+.brand > span:last-child > span { color: #8b9f8e; }
+.brand-mark { display: block; width: 34px; height: 34px; flex: 0 0 auto; border-radius: 11px; object-fit: contain; }
+.header-search { width: min(330px, 28vw); height: 44px; display: flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; background: #fff; padding: 4px 5px 4px 16px; box-shadow: 0 3px 14px rgba(31,54,44,.04); }
+.header-search:focus-within { border-color: #9db1a5; }
+.header-search input { min-width: 0; width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; font-size: 13px; }
+.header-search button { width: 34px; height: 34px; border: 0; border-radius: 50%; color: white; background: var(--green); cursor: pointer; font-size: 20px; line-height: 1; }
+.header-actions, .user-menu { display: flex; align-items: center; gap: 18px; }
+.header-actions { font-size: 13px; }
+.user-menu { gap: 13px; }
+.host-link, .user-menu > a, .text-button { font-size: 13px; font-weight: 600; }
+.host-link:hover, .user-menu > a:hover, .text-button:hover { color: var(--green); }
+.tax-switch { display: flex; align-items: center; gap: 8px; color: #59675f; white-space: nowrap; cursor: pointer; }
+.tax-switch input { width: 16px; height: 16px; accent-color: var(--green); }
+.user-account { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.user-avatar { width: 32px; height: 32px; flex: 0 0 32px; border-radius: 50%; object-fit: cover; }
+.user-avatar-fallback { display: grid; place-items: center; color: #fff; background: var(--green); font-size: 12px; font-weight: 700; }
+.account-dropdown { position: relative; }
+.account-trigger { display: flex; align-items: center; padding: 4px; border: 1px solid var(--line); border-radius: 999px; background: #fff; cursor: pointer; list-style: none; }
+.account-trigger::-webkit-details-marker { display: none; }
+.account-trigger:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.account-dropdown[open] .account-trigger { border-color: #9db1a5; }
+.account-popover { position: absolute; top: calc(100% + 10px); right: 0; z-index: 20; width: min(260px, calc(100vw - 24px)); padding: 8px; border: 1px solid var(--line); border-radius: 10px; background: #fff; box-shadow: var(--shadow); }
+.account-identity { overflow: hidden; padding: 10px 12px; margin: 0 0 4px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.account-popover a, .account-popover button { display: block; width: 100%; padding: 10px 12px; border: 0; border-radius: 7px; color: var(--ink); background: transparent; font: inherit; font-size: 13px; text-align: left; text-decoration: none; cursor: pointer; }
+.account-popover a:hover, .account-popover button:hover { color: var(--green); background: var(--paper); }
+.account-popover a:focus-visible, .account-popover button:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.signup-link { border: 1px solid var(--line); border-radius: 999px; padding: 9px 15px; }
+.site-footer { padding: 37px clamp(20px, 5vw, 76px) 17px; border-top: 1px solid var(--line); background: #f8faf7; }
+.footer-inner { display: flex; justify-content: space-between; gap: 20px; max-width: 1190px; margin: 0 auto 26px; }
+.footer-brand { font-size: 17px; }
+.footer-brand .brand-mark { width: 30px; height: 30px; }
+.footer-inner p { margin: 8px 0 0; color: var(--muted); font-size: 12px; }
+.footer-links { display: flex; align-items: center; gap: 24px; color: #66756b; font-size: 12px; }
+.footer-links a:hover { color: var(--green); }
+.footer-bottom { display: flex; justify-content: space-between; max-width: 1190px; margin: auto; padding-top: 13px; border-top: 1px solid var(--line); color: #849087; font-size: 10px; }
