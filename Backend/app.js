@@ -128,6 +128,16 @@ app.use(
   })
 );
 
+// cors
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://arrive-home-btahiawq6-gaurav-patil-alone.vercel.app"
+  ],
+  credentials: true
+}));
+
+
 // Passport configuration
 app.use(passport.initialize());
 app.use(passport.session());
